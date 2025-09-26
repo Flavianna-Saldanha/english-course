@@ -7,6 +7,7 @@ export const navList: MenuInterface[] = [
     },
     {
         url:"/#Matricula",
-        label: "Matricule-se"
+        label: "Matricule-se",
+        isButton: true
     }
 ]
