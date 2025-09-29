@@ -16,7 +16,7 @@ export const Menu = () => {
 
     return (
         <div>
-            <header className="w-full mt-8 uppercase border border-red-600 md:flex ">
+            <header className="relative w-full mt-8 uppercase md:flex md:justify-around">
                 <div className="flex justify-around">
                     <Link href="/">
                         <Image 
@@ -46,9 +46,35 @@ export const Menu = () => {
                     </nav>
                 </div>
 
+                {/*MENU MOBILE OPÇÕES*/}
+
+                {menuOpen && (
+                    <div className="md:hidden absolute top-11 left-0 w-full h-screen bg-gray-950/95 text-white z-50 flex flex-col items-center pt-20 gap-20">
+                        <ul className="text-center flex flex-col gap-8">
+                            {menuList.map((item, index) => (
+                                <MenuItem 
+                                    key={index}
+                                    url={item.url}
+                                    label={item.label}
+                                />
+                            ))}
+                        </ul>
+                        <ul className="text-center flex flex-col gap-8">
+                            {navList.map((item, index) => (
+                                <NavList 
+                                    key={index}
+                                    url={item.url}
+                                    label={item.label}
+                                    isButton={item.isButton}
+                                />
+                            ))}
+                        </ul>
+                    </div>
+                )}
+
 
                 {/*MENU DESKTOP*/}
-                <div className="border border-blue-600 md:flex md:flex-1">
+                <div className="md:text-sm md:flex md:gap-24">
                     <nav className="hidden md:flex ">
                         <ul className="md:flex md:gap-10">
                             {menuList.map((item, index) => (

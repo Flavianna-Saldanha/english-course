@@ -1,8 +1,12 @@
 "use client"
 
+import { Header } from "@/components/header/Header";
+
 export const Page = () => {
   return (
-    <div></div>
+    <div className="">
+      <Header/>
+    </div>
   );
 }
 
