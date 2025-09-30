@@ -6,6 +6,7 @@ export const Beneficios = () => {
         <div>
             {BeneficiosList.map((item, index) => (
                 <BeneficiosItem
+                    key={index}
                     index={item.index}
                     url={item.url}
                     desc={item.desc}
