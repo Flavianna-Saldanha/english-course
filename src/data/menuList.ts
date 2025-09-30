@@ -1,4 +1,4 @@
-import { MenuInterface } from "@/components/menu/MenuItem";
+import { MenuInterface } from './../components/types/MenuInterface';
 
 export const menuList: MenuInterface[] = [
     {

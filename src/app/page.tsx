@@ -1,8 +1,8 @@
 "use client"
 
+import { Beneficios } from "@/components/beneficios/Beneficios";
 import { Header } from "@/components/header/Header";
 import { PitchSection } from "@/components/pitch/PitchSection";
-import { patrocinios } from "@/data/patrocinios";
 import { PatrociniosItem } from "@/patrociniosItem";
 
 export const Page = () => {
@@ -11,6 +11,7 @@ export const Page = () => {
       <Header/>
       <PatrociniosItem />
       <PitchSection />
+      <Beneficios />
     </div>
   );
 }

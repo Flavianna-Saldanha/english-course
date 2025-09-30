@@ -1,7 +1,4 @@
-export type Patro = {
-    index: number;
-    url: string;
-}
+import { Patro } from "@/components/types/Patro";
 
 export const patrocinios: Patro[] = [
     {

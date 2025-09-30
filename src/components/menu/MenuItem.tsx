@@ -1,11 +1,5 @@
 import Link from "next/link";
-
-export type MenuInterface = {
-    label: string;
-    url: string;
-    isButton?: boolean;
-
-}
+import { MenuInterface } from "../types/MenuInterface";
 
 export const MenuItem = ({url, label}: MenuInterface) => {
     const isMatricula = label.toLowerCase() === "Matricule-se";
