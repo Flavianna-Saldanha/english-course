@@ -9,14 +9,13 @@ export const Header = () => {
                     <p className="text-justify w-64 text-lg m-auto font-sans md:m-0 md:w-96">Você já pensou em aprender um novo idioma, mas sempre deixou para depois? O momento certo é agora!</p>
                     <button className="w-28 p-2 rounded-xl m-auto uppercase border bg-[#0b294d] text-white text-sm md:m-0">Saiba mais</button>
                 </div>
-                <div className="flex justify-center">
+                <div className="flex justify-center ">
                     <Image
                         src="/assets/1.png"
                         width={650}
                         height={650}
                         alt="Foto de um estudante"
-                        className="object-contain"
-
+                        className="object-contain drop-shadow-[10px_8px_25px_black]"
                     />
                 </div>
             </section>

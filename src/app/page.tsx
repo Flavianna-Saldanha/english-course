@@ -1,15 +1,16 @@
 "use client"
 
 import { Header } from "@/components/header/Header";
+import { PitchSection } from "@/components/pitch/PitchSection";
 import { patrocinios } from "@/data/patrocinios";
+import { PatrociniosItem } from "@/patrociniosItem";
 
 export const Page = () => {
   return (
-    <div className="">
+    <div className="overflow-x-hidden">
       <Header/>
-      <div>
-       
-      </div>
+      <PatrociniosItem />
+      <PitchSection />
     </div>
   );
 }
