@@ -1,7 +1,7 @@
 export const PitchSection = () => {
     return(
         <div>
-            <div className="h-[500px] mt-30 flex flex-col items-center gap-20 lg:gap-32 md:flex-row md:justify-center">
+            <div className="h-[500px] mt-30 flex flex-col items-center gap-20 lg:gap-32 md:flex-row md:justify-center lg:mt-36">
                 <div className="flex flex-col gap-4 items-center md:items-start">
                     <h2 className="font-arial text-4xl lg:text-5xl font-black leading-7 tracking-tighter">
                         <span className="text-red-600">Inglês</span><br /><span className="text-[#0b294d]">em 6</span><br /><span className="text-[#0b294d]">meses</span><br /><span className="font-semibold text-[#0b294d]">É possível?</span>
