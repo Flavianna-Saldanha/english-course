@@ -7,7 +7,7 @@ export const Beneficios = () => {
       <h1 className="text-3xl uppercase text-center mb-10 mx-6">
         Benefícios de aprender inglês com a gente
       </h1>
-      <div className="flex flex-wrap justify-center gap-14">
+      <div className="flex flex-wrap justify-center gap-10">
         {BeneficiosList.map((item, index) => (
           <BeneficiosItem
             key={index}
