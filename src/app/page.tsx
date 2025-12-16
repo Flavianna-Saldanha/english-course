@@ -25,7 +25,7 @@ export const Page = () => {
               alt="Seta"
               width={40}
               height={40}
-              className="transform rotate-180 w-10 h-10"
+              className="transform rotate-180 w-7 lg:w-10"
             />
           </button>
 
@@ -35,12 +35,12 @@ export const Page = () => {
               alt="Seta"
               width={120}
               height={120}
-              className="rounded-full"
+              className="rounded-full w-24 lg:w-32"
             />
-            <p className="uppercase italic text-xs text-center my-3">
+            <p className="uppercase italic text-[10px] text-center my-3 lg:text-xs">
               Giulia, 29 anos
             </p>
-            <p className="w-[390px] text-center italic">
+            <p className="w-72 text-sm text-center italic lg:w-[390px] lg:text-[16px]">
               "Antes do curso, eu não conseguia nem pedir um café em inglês.
               Hoje, viajei para Londres e consegui me comunicar sem medo. Foi
               incrível!"
@@ -52,7 +52,7 @@ export const Page = () => {
               alt="Seta"
               width={40}
               height={40}
-              className="w-10 h-10"
+              className="w-7 lg:w-10"
             />
           </button>
         </div>
@@ -61,47 +61,17 @@ export const Page = () => {
       <section
         className="
           w-full
-          h-[600px]
+          h-[300px]
           bg-[url('/assets/3.png')]
           bg-no-repeat
-          bg-fixed
-          bg-top
-          bg-cover
+          bg-center
+          bg-contain
+          lg:bg-cover
+          lg:bg-top
+          lg:bg-fixed
+          lg:h-[430px]
         "
       />
-
-      <footer>
-        <div className="flex justify-around mt-20">
-          <div className="">
-            <Image src="/assets/8.png" alt="Seta" width={120} height={120} />
-            <p className="w-64 mt-2 text-sm italic">
-              Comece hoje e abra portas para o mundo!
-            </p>
-          </div>
-          <div>
-            <h1 className="font-black uppercase text-lg mb-5">
-              Links importantes
-            </h1>
-            <div className="flex flex-col gap-4 text-sm">
-              <a href="">HOME</a>
-              <a href="">SOBRE</a>
-              <a href="">OFERTAS</a>
-              <a href="">MATRICULE-SE</a>
-            </div>
-          </div>
-          <div>
-            <h1 className="font-black uppercase text-lg mb-5">
-              Informações de contato
-            </h1>
-            <div className="flex flex-col gap-4 text-sm">
-              <a href="">E-MAIL DE ATENDIMENTO</a>
-              <a href="">TELEFONE/WHATSAPP</a>
-              <a href="">ENDEREÇO</a>
-              <a href="">LINKS DIRETOS PARA REDES SOCIAIS</a>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 };

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Menu } from "@/components/menu/Menu";
-
+import Footer from "@/components/footer/Footer";
 
 export const metadata: Metadata = {
   title: "English Course",
@@ -18,11 +18,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body
-        
-      >
+      <body>
         <Menu />
         {children}
+
+        <Footer />
       </body>
     </html>
   );
