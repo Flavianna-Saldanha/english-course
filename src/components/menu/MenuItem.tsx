@@ -1,32 +1,29 @@
 import Link from "next/link";
 import { MenuInterface } from "../types/MenuInterface";
 
-export const MenuItem = ({url, label}: MenuInterface) => {
-    const isMatricula = label.toLowerCase() === "Matricule-se";
+export const MenuItem = ({ url, label, onClick }: MenuInterface) => {
+  return (
+    <li onClick={onClick}>
+      <Link href={url} className="hover:opacity-95">
+        {label}
+      </Link>
+    </li>
+  );
+};
 
-    return (
-        <div>
-            <li>
-                <Link href={url}>
-                    {label}
-                </Link>
-            </li>
-        </div>
-    );
-}
-
-export const NavList = ({url, label, isButton}: MenuInterface) => {
-    return (
-            <li>
-                <Link 
-                    href={url}
-                    className={ isButton ? 
-                        "bg-[#0b294d] text-white px-4 py-3 rounded-xl hover:opacity-95":
-                        "hover:opacity-95"
-                    }
-                >
-                    {label}
-                </Link>
-            </li>
-    );
-}
+export const NavList = ({ url, label, isButton, onClick }: MenuInterface) => {
+  return (
+    <li onClick={onClick}>
+      <Link
+        href={url}
+        className={
+          isButton
+            ? "bg-[#0b294d] text-white px-4 py-3 rounded-xl hover:opacity-95"
+            : "hover:opacity-95"
+        }
+      >
+        {label}
+      </Link>
+    </li>
+  );
+};

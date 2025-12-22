@@ -1,5 +1,6 @@
-export type MenuInterface = {
-    label: string;
-    url: string;
-    isButton?: boolean;
+export interface MenuInterface {
+  url: string;
+  label: string;
+  isButton?: boolean;
+  onClick?: () => void;
 }

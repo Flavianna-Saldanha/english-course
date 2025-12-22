@@ -1,16 +1,7 @@
-import { MenuInterface } from './../components/types/MenuInterface';
+import { MenuInterface } from "./../components/types/MenuInterface";
 
 export const menuList: MenuInterface[] = [
-    {
-        url:"/#home",
-        label: "Home"
-    },
-    {
-        url:"/#sobre",
-        label: "Sobre"
-    },
-    {
-        url:"/#planos",
-        label: "Planos"
-    }
-]
+  { url: "/", label: "Home" },
+  { url: "/sobre", label: "Sobre" },
+  { url: "/planos", label: "Planos" },
+];
