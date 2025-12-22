@@ -14,7 +14,7 @@ export const Page = () => {
       <PitchSection />
       <Beneficios />
 
-      <div>
+      <div className="pt-10">
         <div>
           <h1 className="text-2xl uppercase text-center my-10">Depoimentos</h1>
         </div>
