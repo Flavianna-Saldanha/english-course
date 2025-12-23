@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export const Sobre = () => {
   return (
-    <div className="container mx-auto">
-      <div className="h-screen flex justify-center items-center gap-14">
+    <div className="container mx-auto mb-40">
+      <div className="mt-20 h-screen flex flex-col-reverse lg:flex-row justify-center items-center gap-14 bg-white p-10">
         <div>
           <h1 className="uppercase text-2xl font-bold mb-10">Sobre nós</h1>
           <div className="max-w-lg space-y-4 text-gray-700 leading-relaxed">
@@ -36,20 +36,20 @@ export const Sobre = () => {
           <Image
             src="/assets/4.png"
             alt="Imagem Sobre"
-            width={400}
-            height={200}
-            className="relative rounded-sm"
+            width={300}
+            height={100}
+            className="relative rounded-sm lg:w-[400px]"
           />
         </div>
       </div>
 
-      <div className="h-screen flex flex-col md:flex-row justify-center items-center gap-14 bg-white p-10">
+      <div className="mt-10 lg:mt-0 h-screen flex flex-col lg:flex-row justify-center items-center gap-14 bg-white p-10">
         <div className="relative">
           <div className="filter drop-shadow-[0px_50px_20px_rgba(0,0,0,0.25)]">
             <img
               src="/assets/5.png"
               alt="Nossa História"
-              className="w-[450px] h-auto block"
+              className="w-[300px] h-auto block lg:w-[400px]"
             />
           </div>
         </div>
