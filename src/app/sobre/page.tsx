@@ -6,7 +6,7 @@ export const Sobre = () => {
       <div className="h-screen flex justify-center items-center gap-14">
         <div>
           <h1 className="uppercase text-2xl font-bold mb-10">Sobre nós</h1>
-          <div className="w-2xl space-y-3">
+          <div className="max-w-lg space-y-4 text-gray-700 leading-relaxed">
             <p>
               Nós acreditamos que aprender um novo idioma não precisa ser um
               processo longo e cansativo. Com o nosso método, mostramos que é
@@ -28,14 +28,11 @@ export const Sobre = () => {
           </div>
         </div>
         <div className="relative inline-block">
-          {/* sombra tipo vidro */}
           <div
             className="absolute -bottom-3 -right-3 w-full h-full 
                   bg-white/30 backdrop-blur-md 
                   shadow-xl rounded-sm"
           />
-
-          {/* imagem */}
           <Image
             src="/assets/4.png"
             alt="Imagem Sobre"
@@ -46,60 +43,31 @@ export const Sobre = () => {
         </div>
       </div>
 
-      <div className="h-screen flex justify-center items-center gap-14">
-        <div className="relative inline-block">
-          {/* sombra curva estilo mockup */}
-          <svg
-            className="absolute -bottom-20 left-1/2 -translate-x-1/2 w-[110%] scale-y-[-1]"
-            viewBox="0 0 420 60"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="
-        M 0 25
-        C 60 45, 140 55, 200 55
-        C 260 55, 340 45, 400 25
-        L 400 60
-        L 0 60
-        Z
-      "
-              fill="rgba(0,0,0,0.45)"
-            />
-          </svg>
-
-          {/* imagem */}
-          <div className="relative bg-[#0c2b52] p-6">
-            <Image
+      <div className="h-screen flex flex-col md:flex-row justify-center items-center gap-14 bg-white p-10">
+        <div className="relative">
+          <div className="filter drop-shadow-[0px_50px_20px_rgba(0,0,0,0.25)]">
+            <img
               src="/assets/5.png"
               alt="Nossa História"
-              width={450}
-              height={350}
-              className="relative"
+              className="w-[450px] h-auto block"
             />
           </div>
         </div>
 
-        <div>
-          <div className="w-2xl space-y-3">
-            <p>
-              Nós acreditamos que aprender um novo idioma não precisa ser um
-              processo longo e cansativo. Com o nosso método, mostramos que é
-              possível alcançar a fluência em apenas 6 meses. Trabalhamos com
-              imersão diária, tecnologia de ponta, prática constante e um
-              objetivo claro: fazer você falar inglês com confiança.
-            </p>
-            <p>
-              Nosso compromisso é transformar o inglês em uma ferramenta real
-              para sua vida, seja para melhorar sua comunicação, conquistar
-              novas oportunidades de carreira, ter segurança ao falar com
-              nativos, criar conexões globais ou conquistar uma certificação
-              reconhecida.
-            </p>
-            <p>
-              Aqui, você aprende rápido, de forma prática e com disciplina — sem
-              enrolação.
-            </p>
-          </div>
+        <div className="max-w-lg space-y-4 text-gray-700 leading-relaxed">
+          <p>
+            Nós acreditamos que aprender um novo idioma não precisa ser um
+            processo longo e cansativo. Com o nosso método, mostramos que é
+            possível alcançar a fluência em apenas 6 meses.
+          </p>
+          <p>
+            Ao longo do curso, você terá imersão diária e tecnologia de ponta
+            para fazer você falar inglês com confiança.
+          </p>
+          <p className="italic font-light">
+            "Antes do curso, eu tinha receio. Hoje, converso com pessoas de
+            Londres e sinto que as portas se abriram."
+          </p>
         </div>
       </div>
     </div>
