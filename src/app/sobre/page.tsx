@@ -56,17 +56,22 @@ export const Sobre = () => {
 
         <div className="max-w-lg space-y-4 text-gray-700 leading-relaxed">
           <p>
-            Nós acreditamos que aprender um novo idioma não precisa ser um
-            processo longo e cansativo. Com o nosso método, mostramos que é
-            possível alcançar a fluência em apenas 6 meses.
+            Desenvolvemos um método baseado em imersão e prática contínua,
+            voltado para quem não quer perder tempo e deseja resultados reais.
+            Não se trata apenas de estudar inglês, mas de viver o idioma no dia
+            a dia.
           </p>
           <p>
-            Ao longo do curso, você terá imersão diária e tecnologia de ponta
-            para fazer você falar inglês com confiança.
+            Ao longo do tempo, centenas de alunos comprovaram a eficácia do
+            nosso curso. Como disse uma de nossas alunas:
           </p>
           <p className="italic font-light">
-            "Antes do curso, eu tinha receio. Hoje, converso com pessoas de
-            Londres e sinto que as portas se abriram."
+            “Antes do curso, eu não conseguia nem pedir um café em inglês. Hoje,
+            viajei para Londres e consegui me comunicar sem medo. Foi incrível!”
+          </p>
+          <p>
+            Nossa história é construída a cada nova conquista dos alunos que
+            transformam suas vidas por meio do inglês.
           </p>
         </div>
       </div>
