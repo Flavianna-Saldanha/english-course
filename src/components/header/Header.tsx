@@ -12,7 +12,7 @@ export const Header = () => {
             Você já pensou em aprender um novo idioma, mas sempre deixou para
             depois? O momento certo é agora!
           </p>
-          <button className="w-28 p-1 rounded-xl m-auto uppercase border bg-[#0b294d] text-white text-sm md:m-0 lg:w-28">
+          <button className="w-28 p-1 rounded-xl m-auto uppercase border bg-[var(--button-bg-color)] text-white text-sm md:m-0 lg:w-28">
             Saiba mais
           </button>
         </div>
