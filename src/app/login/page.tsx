@@ -2,9 +2,9 @@ import Image from "next/image";
 
 export const Login = () => {
   return (
-    <div className="mt-10 flex min-h-screen">
-      <div className="flex-3 bg-[#ae0000] flex items-center justify-center">
-        <img src="/assets/9.png" alt="" className="w-2/4" />
+    <div className="lg:mt-10 flex min-h-screen">
+      <div className="lg:flex-3 lg:bg-[#ae0000] lg:flex lg:items-center lg:justify-center">
+        <img src="/assets/9.png" alt="" className="w-2/4 hidden lg:block" />
       </div>
 
       <div className="flex-2 flex items-center justify-center">
@@ -40,32 +40,53 @@ export const Login = () => {
           </div>
 
           <div>
-            <form className="flex flex-col gap-4 text-left">
+            <form
+              className="
+              mx-auto
+              w-[80%]        
+              lg:w-full     
+              flex flex-col gap-4 text-left
+            "
+            >
+              {/* EMAIL */}
               <div>
-                <label className="text-sm font-medium text-gray-700">
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium text-gray-700"
+                >
                   Email
                 </label>
                 <input
+                  id="email"
                   type="email"
                   placeholder="email@exemplo.com"
-                  className="mt-1 w-full h-11 px-3 border rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="mt-1 w-full h-11 px-3 border rounded-md text-sm
+                           focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
               </div>
 
+              {/* PASSWORD */}
               <div>
-                <label className="text-sm font-medium text-gray-700">
+                <label
+                  htmlFor="password"
+                  className="block text-sm font-medium text-gray-700"
+                >
                   Password
                 </label>
                 <input
+                  id="password"
                   type="password"
                   placeholder="••••••••"
-                  className="mt-1 w-full h-11 px-3 border rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="mt-1 w-full h-11 px-3 border rounded-md text-sm
+                           focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
               </div>
 
+              {/* BOTÃO */}
               <button
                 type="submit"
-                className="mt-2 h-11 bg-black text-white rounded-md text-sm font-medium hover:bg-gray-900 transition"
+                className="mt-2 h-11 bg-black text-white rounded-md
+                         text-sm font-medium hover:bg-gray-900 transition"
               >
                 Sign in
               </button>
