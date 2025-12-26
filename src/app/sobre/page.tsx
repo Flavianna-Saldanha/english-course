@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export const Sobre = () => {
+export default function Sobre() {
   return (
     <div className="container mx-auto">
       {/* BLOCO 1 */}
@@ -98,6 +98,4 @@ export const Sobre = () => {
       </section>
     </div>
   );
-};
-
-export default Sobre;
+}

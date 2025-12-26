@@ -2,11 +2,11 @@
 
 import { Beneficios } from "@/components/beneficios/Beneficios";
 import { Header } from "@/components/header/Header";
-import { PitchSection } from "@/components/pitch/PitchSection";
+import PitchSection from "@/components/pitch/PitchSection";
 import { PatrociniosItem } from "@/patrociniosItem";
 import Image from "next/image";
 
-export const Page = () => {
+export default function Page() {
   return (
     <div className="overflow-x-hidden">
       <Header />
@@ -15,9 +15,8 @@ export const Page = () => {
       <Beneficios />
 
       <div className="pt-10">
-        <div>
-          <h1 className="text-2xl uppercase text-center my-10">Depoimentos</h1>
-        </div>
+        <h1 className="text-2xl uppercase text-center my-10">Depoimentos</h1>
+
         <div className="flex justify-around items-center">
           <button className="cursor-pointer">
             <Image
@@ -25,27 +24,30 @@ export const Page = () => {
               alt="Seta"
               width={40}
               height={40}
-              className="transform rotate-180 w-7 lg:w-10"
+              className="rotate-180 w-7 lg:w-10"
             />
           </button>
 
-          <div className="mt-10 mb-20 flex flex-col items-center">
+          <div className="mt-10 mb-20 flex flex-col items-center gap-2">
             <Image
               src="/assets/giulia.jpg"
-              alt="Seta"
+              alt="Giulia"
               width={120}
               height={120}
               className="rounded-full w-24 lg:w-32"
             />
-            <p className="uppercase italic text-[10px] text-center my-3 lg:text-xs">
+
+            <p className="uppercase italic text-[10px] lg:text-xs">
               Giulia, 29 anos
             </p>
-            <p className="w-72 text-sm text-center italic lg:w-[390px] lg:text-[16px]">
-              "Antes do curso, eu não conseguia nem pedir um café em inglês.
-              Hoje, viajei para Londres e consegui me comunicar sem medo. Foi
-              incrível!"
+
+            <p className="w-72 text-sm text-center italic lg:w-[390px] lg:text-base">
+              &quot;Antes do curso, eu não conseguia nem pedir um café em
+              inglês. Hoje, viajei para Londres e consegui me comunicar sem
+              medo. Foi incrível!&quot;
             </p>
           </div>
+
           <button className="cursor-pointer">
             <Image
               src="/assets/seta-direita.png"
@@ -74,6 +76,4 @@ export const Page = () => {
       />
     </div>
   );
-};
-
-export default Page;
+}
