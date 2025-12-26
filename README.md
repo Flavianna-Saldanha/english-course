@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌎 FluentWay | English Course Platform
 
-## Getting Started
+Plataforma web para um curso de inglês focado em **fluência prática**, desenvolvida com **Next.js** e **Tailwind CSS**.  
+O projeto é responsivo, moderno e pensado para uma experiência clara tanto no mobile quanto no desktop.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🧠 Sobre o projeto
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+O **FluentWay** foi criado para apresentar um método de ensino de inglês baseado em imersão, prática contínua e resultados rápidos.  
+A plataforma inclui páginas institucionais, área de login, matrícula e navegação otimizada.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Principais objetivos:
+- Apresentar o método do curso
+- Facilitar o processo de matrícula
+- Oferecer uma experiência visual limpa e profissional
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🚀 Tecnologias utilizadas
 
-To learn more about Next.js, take a look at the following resources:
+- **Next.js**
+- **React**
+- **TypeScript**
+- **Tailwind CSS**
+  
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📱 Responsividade
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+O layout segue o conceito **mobile-first**, garantindo:
 
-## Deploy on Vercel
+- Campos ocupando aproximadamente **80% da tela no mobile**
+- Layout centralizado e legível
+- Adaptação fluida para tablets e desktops
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📬 Entre em Contato  
+
+Caso tenha interesse em conversar sobre projetos, parcerias ou oportunidades, entre em contato comigo:  
+
+- **Email**: flaviannasaldanhadev@gmail.com  
+- **LinkedIn**: https://www.linkedin.com/in/flavianna-saldanha/
+- **Site do projeto**: https://english-course-plum.vercel.app/
+
+---
+
+Espero que goste do meu trabalho! 😊
