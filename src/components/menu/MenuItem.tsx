@@ -18,7 +18,7 @@ export const NavList = ({ url, label, isButton, onClick }: MenuInterface) => {
         href={url}
         className={
           isButton
-            ? "bg-[#0b294d] text-white px-4 py-3 rounded-xl hover:opacity-95"
+            ? "bg-[var(--button-bg-color)] text-white px-4 py-3 rounded-xl hover:opacity-95"
             : "hover:opacity-95"
         }
       >
